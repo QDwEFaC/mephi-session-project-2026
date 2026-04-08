@@ -23,6 +23,7 @@ server {
 В файлы 
 - /etc/pam.d/sshd
 - /etc/pam.d/login
+  
 добавлена в начало строка
 ```
 auth required pam_listfile.so item=user sense=deny file=/etc/ssh/denied_users onerr=fail
